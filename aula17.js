@@ -11,7 +11,7 @@ let fatorial = 10
 let inicio = 1 
 
 while(fatorial > 0){
-    inicio *= fatorial
+    inicio = inicio * fatorial  // inicio *= fatorial
     fatorial--
     console.log(inicio)
 }
