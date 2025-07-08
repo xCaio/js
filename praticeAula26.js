@@ -1,12 +1,12 @@
-const soma=(...values)=>{
-    const somando =(valor)=>{
-        let resultado = 0
-        for(i in valor){
-            resultado+= valor[i]
+const soma = (... values) => {
+    const somando=(valor)=>{
+        let res = 0
+        for(i of valor){
+            res+= i
         }
-        return resultado
+        return res
     }
-    return somando(values)
+    return console.log(somando(values))
 }
 
-console.log(soma(1,3,2,2))
+soma(1,2,2)
