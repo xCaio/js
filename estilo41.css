@@ -43,13 +43,15 @@ main{
 
 .curso{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     width: 200px;
     border: 4px solid #888;
     border-radius: 10px;
     padding: 10px;
     margin: 5px 0px;
-    cursor: pointer;
+
+
 }
 .curso:hover{
     border-color: #f00;
@@ -71,4 +73,9 @@ main{
 .diferente{
     text-transform: uppercase;
     font-size: 30px;
+}
+.trash__icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
