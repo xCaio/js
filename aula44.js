@@ -34,8 +34,6 @@ btnRemoverCurso.addEventListener('click', (event)=>{
     }catch(err){
         alert("Selecione um curso para remover")
     }
-
-
 })
 
 btnCursoSelecionado.addEventListener('click', (event)=>{
