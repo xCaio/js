@@ -3,6 +3,8 @@
  const resultado = document.querySelector("#resultado")
  const btnSoma = document.querySelector("#soma")
  const btnSubtracao = document.querySelector("#subtracao")
+ const btnMultiplicacao = document.querySelector("#multiplicacao")
+ const btnDivisao = document.querySelector("#divisao")
  
  let valores = [1,2,3,4]
  const op = [
@@ -36,7 +38,18 @@ btnSubtracao.addEventListener('click', (event)=>{
     valor1.value = ""
     valor2.value = ""
 })
-
+btnMultiplicacao.addEventListener('click', (event)=>{
+    let multiplicacao = op[2](Number(valor1.value), Number(valor2.value))
+    resultado.innerHTML=multiplicacao
+    valor1.value=""
+    valor2.value=""
+})
+btnDivisao.addEventListener('click', (event)=>{
+    let divisao = op[3](Number(valor1.value), Number(valor2.value))
+    resultado.innerHTML= divisao
+    valor1.value = ""
+    valor2.value = ""
+})
 
 
 
