@@ -1,3 +1,4 @@
+// quando defino um membro como static estou dizendo que o membro pertence a classe e não as instancias da classe
 class Npc{
     static alerta = false
     constructor(energia){
